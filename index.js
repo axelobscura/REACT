@@ -30,7 +30,7 @@ class App extends React.Component {
                     img={"https://images.unsplash.com/photo-1556442717-2eb4645c8875?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}
                 />
                 <Machine
-                    s1={1}
+                    s1={10}
                     s2={1}
                     s3={1}
                 />

@@ -9,6 +9,9 @@ function prize(a, b, c) {
     }
 }
 class Machine extends React.Component {
+    static defaultProps = {
+        from: "Joel",
+    }
     render() {
         const { s1, s2, s3 } = this.props;
         var s1a = s1 * getNum();
@@ -23,11 +26,12 @@ class Machine extends React.Component {
                 id: 2,
                 text: "Aleluya"
             }
-        ]
+        ];
+        const colors = { fontSize: '20px', backgroundColor: 'purple' };
         return (
-            <div>
+            <div className="Machine">
                 <h1>Machine component</h1>
-                <p>{s1a}</p>
+                <p style={colors}>{s1a}</p>
                 <p>{s2a}</p>
                 <p>{s3a}</p>
                 <h2>{prize(s1a, s2a, s3a)}</h2>
